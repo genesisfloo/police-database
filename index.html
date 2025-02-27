@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Police Database Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="digital-background">
+        <span>1010101010101 1101101101010 1010101010101 1110001110001</span>
+        <span>1110001110001 1101101101010 1010101010101 1011011010110</span>
+        <span>1010101010101 1110001110001 1110001110001 1101101101010</span>
+        <span>1010101010101 1010101010101 1110001110001 1011011010110</span>
+    </div>
+
+    <div class="container" id="login-container">
+        <h1>Police Database Login</h1>
+        <form id="login-form">
+            <label for="username">Username:</label>
+            <input type="text" id="username" required>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" required>
+            
+            <button type="submit">Log In</button>
+            <p id="error-message"></p>
+        </form>
+    </div>
+
+    <div class="container" id="database-container" style="display: none;">
+        <h2>Crime Logging System</h2>
+        <div class="flex-container">
+            <div class="box" id="citizen-box">
+                <h3>Citizens</h3>
+                <ul id="citizen-list"></ul>
+            </div>
+            <div class="box" id="crime-box">
+                <h3>Log a Crime</h3>
+                <div id="crime-buttons"></div>
+            </div>
+        </div>
+        <p id="log-message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
